@@ -1,0 +1,424 @@
+/* ==========================================================================
+   Global Styles
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #FFFFFF;
+}
+
+html {
+    background: #000 url('../img/wild-bg.jpg') no-repeat top center;
+    min-height: 100%;
+    background-size: cover;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+    font-family: 'Kelly Slab', cursive;
+    text-transform: uppercase;
+    min-height: 100%;
+}
+
+::-moz-selection {
+    background: #000000;
+    text-shadow: none;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+::selection {
+    background: #000000;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 3px;
+    width: 50%;
+    border: 0;
+    border-top: 1px solid #FFFFFF;
+    margin: 2px 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #dbdada;
+}
+
+
+/* ==========================================================================
+Heart Attack Kids - Styling
+   ========================================================================== */
+
+.container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: auto;
+    width: 100%;
+    background: url("/img/bg2.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0;           overflow: hidden;
+    text-align: center;
+}
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 90%;
+    text-align: center;
+}
+#content {
+    width: 31vw;
+    margin:auto;
+    align-content: center;
+}
+#content iframe {
+    width: 31vw;
+    height:calc((9/16)*31vw);
+    align-content: center;
+}
+td.responsive {
+    width: 33vw;
+}
+.grid-container {
+    width : 100%;
+    max-width : 1540px;
+    box-sizing: border-box; 
+}
+.col-3 {
+    float: inherit;
+    min-height: 1px;
+    width: 22%;
+    padding: 5px;
+    display: table-cell;
+}
+.col-6 {
+    float: inherit;
+    min-height: 1px;
+    width: 45%;
+    padding: 5px;
+    max-width: 750px;
+    display: table-cell;
+}
+.col-4 {
+    float: inherit;
+    min-height: 1px;
+    width: 32%;
+    padding: 5px;
+    max-width: 490px;
+    display: table-cell;
+}
+.col-12 {
+    float: inherit;
+    min-height: 1px;
+    width: 95%;
+    padding: 10px;
+    max-width: 1541px;
+}
+.row:before, 
+.row:after {
+    content:"";
+    display: table ;
+    clear:both;
+}
+
+#bg_container { 
+    width: 100%;
+    overflow:hidden; 
+}
+#bg { 
+    width:100%; 
+    height:900px; 
+}
+article.video {
+    width: 700px;
+    margin: auto;
+}
+aside.images {
+    width: 480px;
+    float: left;
+}
+div.newsletter a {}
+div.newsletter {}
+footer {
+    clear: both;
+    padding-top: 10px;
+}
+header h1 {}
+header h2 {
+    font-size: 42px;
+    margin: 0;
+}
+header img {}   
+header {
+    text-align: center;
+}
+main {}
+.newsletter a {
+    font-size: 25px;
+}
+.newsletter a.store {
+    padding-bottom: 10px;
+    display: inline-block;
+}
+nav a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+nav ul {
+    padding: 0;
+}
+nav li {
+    display: inline;
+    list-style-type: none;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 40px;
+}
+nav li img {
+    padding-right: 5px;
+}
+nav ul {}
+nav {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    text-align: center;
+    width: 100%;
+}
+
+.flag {
+    margin-top: 10px;
+}
+.fadein { 
+    height:264px;
+    position:relative; 
+    width:470px; 
+}
+.fadein img {
+    left:0; 
+    position:absolute; 
+    top:0;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+@media all and (max-width:800px){
+        .col-3{ display: none;    }
+        .col-6{ width: 100%;      }
+        .col-4{ width: 100%; display: inline-block;      }
+#content {
+    width: 75vw;
+    margin:auto;
+}
+#content iframe {
+    width: 75vw;
+    height:calc((9/16)*75vw);
+}
+td.responsive {
+    width: 100vw;
+}
+    }
+@media all and (max-width:650px){
+        .col-3{ display: none;    }
+        .col-6{ width: 100%;      }
+        .col-4{ width: 100%; display: inline-block;      }
+#content {
+    width: 100vw;
+    margin:auto;
+}
+#content iframe {
+    width: 100vw;
+    height:calc((9/16)*100vw);
+}
+    }
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #d1d1d1 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !impor5tant;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
