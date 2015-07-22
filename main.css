@@ -113,13 +113,13 @@ Heart Attack Kids - Styling
     text-align: center;
 }
 #content {
-    width: 31vw;
+    width: 49vw;
     margin:auto;
     align-content: center;
 }
 #content iframe {
-    width: 31vw;
-    height:calc((9/16)*31vw);
+    width: 49vw;
+    height:calc((9/16)*49vw);
     align-content: center;
 }
 td.responsive {
@@ -133,15 +133,15 @@ td.responsive {
 .col-3 {
     float: inherit;
     min-height: 1px;
-    width: 22%;
-    padding: 5px;
+    width: 25vw;
+    padding: 1vw;
     display: table-cell;
 }
 .col-6 {
     float: inherit;
     min-height: 1px;
-    width: 45%;
-    padding: 5px;
+    width: 47vw;
+    padding: 0.5vw;
     max-width: 750px;
     display: table-cell;
 }
@@ -245,7 +245,6 @@ nav {
     position:absolute; 
     top:0;
 }
-
 /* ==========================================================================
    Media Queries
    ========================================================================== */
@@ -262,8 +261,8 @@ nav {
 }
 @media all and (max-width:800px){
         .col-3{ display: none;    }
-        .col-6{ width: 100%;      }
-        .col-4{ width: 100%; display: inline-block;      }
+        .col-6{ width: 98vw; display: block; margin: 1vw;      }
+        .col-4{ width: 100%; display: block;      }
 #content {
     width: 75vw;
     margin:auto;
@@ -278,18 +277,17 @@ td.responsive {
     }
 @media all and (max-width:650px){
         .col-3{ display: none;    }
-        .col-6{ width: 100%;      }
-        .col-4{ width: 100%; display: inline-block;      }
+        .col-6{ width: 98vw; display: block; margin: 1vw;    }
+        .col-4{ width: 100%; display: block;      }
 #content {
-    width: 100vw;
-    margin:auto;
+    width: 95vw;
+    margin:0px;
 }
 #content iframe {
-    width: 100vw;
-    height:calc((9/16)*100vw);
+    width: 95vw;
+    height:calc((9/16)*95vw);
 }
     }
-
 /* ==========================================================================
    Helper classes
    ========================================================================== */
